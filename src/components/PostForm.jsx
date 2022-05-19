@@ -18,7 +18,6 @@ const PostForm = ({create}) => {
     }
     create(newPost)
     setPost({title: '', body: ''})
-
     // console.log(newPost);
     // console.log(bodyInputRef.current.value);
   }
