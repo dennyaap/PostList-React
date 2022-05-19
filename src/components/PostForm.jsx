@@ -16,6 +16,7 @@ const PostForm = ({create}) => {
     const newPost = {
       ...post, id: Date.now()
     }
+    // функция обратного вызова
     create(newPost)
     setPost({title: '', body: ''})
     // console.log(newPost);
