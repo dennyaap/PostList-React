@@ -62,10 +62,7 @@ function App() {
       <hr style={{margin: '15px 0'}}/>
       <PostFilter filter={filter} setFilter={setFilter}/>
       {/* Условная отрисовка */}
-      {sortedAndSearchedPosts.length !== 0
-        ? <PostList posts={sortedAndSearchedPosts} title={'Список постов 1'} remove={removePost}/>
-        : <h1 style={{textAlign: 'center'}}>Посты не были найдены!</h1>
-      }
+        <PostList posts={sortedAndSearchedPosts} title={'Список постов 1'} remove={removePost}/>
     </div>
   );
 }
